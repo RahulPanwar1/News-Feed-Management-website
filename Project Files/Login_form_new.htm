@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- bootstrap plugin -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+    <style>
+      span {
+        color: red;
+      }
+    </style>
+</head>
+
+<body style="background-color: #0e1022;">
+
+  <h1 class="text-light text-center py-3">IIITDMJ TIMES</h1>
+  
+  <form class = "bg-light text-dark text-center p-4" style="margin: 0 20%; border-radius: 5px;" action="login_check.php" method="post">
+  
+
+    <div class="container">
+
+      <img src="https://www.iiitdmj.ac.in/placement.iiitdmj.ac.in/images/iiitdmjlogo2.png" alt="" class="img-fluid">
+      <!-- <h1>NEWS</h1> -->
+      <hr>
+
+      <p> <b> -PLEASE ENTER THE FOLLOWING DETAILS- </b> </p>
+      <hr><br>
+
+
+      <p>
+        <label for="user"> <b>NAME</b> </label><span>*</span> &nbsp;
+        <input type="text" name="First" required="required" placeholder="First" class="w-25"/> &nbsp;
+        <input type="text" name="last" required="required" placeholder="Last" class="w-25" />
+      </p> <br />
+
+      <p>
+        <label for="roll_user"> <b>Password</b> </label><span>*</span> &nbsp;
+        <input type="text" name="roll_no" required="required" placeholder="eg.123..." class="w-50" />
+      
+      </p> <br />
+
+      <p>
+        <label for="email"> <b>INSTITUTE EMAIL ID</b></label><span>*</span>&nbsp;
+        <input type="email" name="email" required="required" placeholder="name@example.com" class="w-50" />
+      </p><br/>
+
+      <p>
+        <label for="DISCIPLINE"> <b>SELECT BRANCH</b></label> <span>*</span>&nbsp;
+        <select name="select" class="w-25">
+          <option value="CSE">CSE</option>
+          <option value="ECE">ECE</option>
+          <option value="ME">ME</option>
+        </select>
+      </p> <br />
+
+
+      <p>
+      <fieldset>
+        <label for="date"><b>YEAR</b></label> <span>*</span> &nbsp;
+        <input type="radio" name="status" value="1st" required="required" /> 1st &nbsp;
+        <input type="radio" name="status" value="2nd" required="required" /> 2nd &nbsp;
+        <input type="radio" name="status" value="3rd" required="required" /> 3rd &nbsp;
+        <input type="radio" name="status" value="4th" required="required" /> 4th &nbsp;
+      </fieldset>
+      </p> <br />
+
+      <br><br>
+
+      <button type="submit" value="submit" class="btn btn-success" >Login</button>
+      <a class="nav-link" href="signup.htm"><b>Go to Sign up page</b></a>
+      <br><br>
+
+    </div>
+    </div>
+  </form>
+
+</body>
+
+</html>
